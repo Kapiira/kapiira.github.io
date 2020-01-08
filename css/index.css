@@ -18,14 +18,19 @@ nav{
     justify-content: space-between;
 }
 
-header{
+nav h1{
+    margin: 0px;
+}
+
+.header{
     line-height: 70px;
     padding: 0px 20px;
     color: #FCFAF9;
-    font-size: 1.5em;
     font-family: 'Oswald', sans-serif;
     letter-spacing: 0.109em;
     text-transform: uppercase;
+    text-decoration: none;
+    display: block;
 }
 
 .menu{
@@ -49,7 +54,7 @@ header{
     color: #E9C46A;
 }
 
-.menu li a:hover{
+.menu li a:hover, .header:hover{
     background: #FCFAF9;
     color: #264653;
 }
@@ -57,6 +62,6 @@ header{
     color: #264653;
 }
 
-.menu li a, .icon{
+.menu li a, .icon, .header{
     transition: linear 0.15s;
 }
