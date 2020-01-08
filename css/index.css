@@ -1,17 +1,62 @@
 body{
     margin: 0;
     padding: 0;
+    font-family: 'Cardo', serif;
+    background: #FCFAF9;
+}
+
+h1, h2, h3, h4, h5, h6, .menu li {
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
 }
 
 nav{
     width: 100%;
     height: 70px;
-    background: grey;
+    background: #264653;
+    display: flex;
+    justify-content: space-between;
 }
 
 header{
     line-height: 70px;
     padding: 0px 20px;
-    color: #FFFFFF;
+    color: #FCFAF9;
     font-size: 1.5em;
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 0.109em;
+    text-transform: uppercase;
+}
+
+.menu{
+    display: flex;
+    line-height: 70px;
+    margin: 0px 15px 0px 0px;
+}
+
+.menu li{
+    list-style-type: none;
+}
+.menu li a{
+    display: block;
+    letter-spacing: 0.09em;
+    color: #FCFAF9;
+    text-decoration: none;
+    padding: 0px 20px;
+}
+
+.icon{
+    color: #E9C46A;
+}
+
+.menu li a:hover{
+    background: #FCFAF9;
+    color: #264653;
+}
+.menu li a:hover .icon{
+    color: #264653;
+}
+
+.menu li a, .icon{
+    transition: linear 0.15s;
 }
