@@ -16,8 +16,8 @@
 
 <body>
     <a href="#main-header" class="skipToMain">Skip To Main Content</a>
-    <nav>
-        <h1><a href="/" class="header">Portfolio website</a></h1>
+    <nav role="navigation">
+        <h1><a href="/" class="header" role="header">Portfolio website</a></h1>
 
         <ul class="menu">
             <li>
@@ -31,9 +31,20 @@
             </li>
         </ul>
     </nav>
-    <div class="main-container">
-        <h1 id="main-header">Home Page</h1>
-
+    <div class="main-container" role="main">
+        <h1 id="main-header">The Portfolio</h1>
+        <div class="grid-container portfolio">
+            <div class="box">
+                <img src="./images/javascript-logo.jpg" alt="javascript logo">
+                <h4>JavaScript</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                    Curabitur aliquet quam id dui posuere blandit. 
+                    Donec sollicitudin molestie malesuada. Sed porttitor lectus nibh.
+                </p>
+            </div>
+            <div class="box"></div>
+            <div class="box"></div>
+        </div>
     </div>
 
     <script src="scripts/scripts.js"></script>
