@@ -1,3 +1,5 @@
+/* For mobile phones: */
+ 
 body{
     margin: 0;
     padding: 0;
@@ -74,48 +76,19 @@ nav h1{
 }
 
 .menu{
-    display: flex;
-    line-height: 70px;
-    margin: 0px 15px 0px 0px;
-}
-
-.menu li{
-    list-style-type: none;
-}
-.menu li a{
-    display: block;
-    letter-spacing: 0.09em;
-    color: #FCFAF9;
-    text-decoration: none;
-    padding: 0px 20px;
-}
-
-.icon{
-    color: #E9C46A;
-}
-
-.menu li a:hover, .header:hover{
-    background: #FCFAF9;
-    color: #264653;
-}
-.menu li a:hover .icon{
-    color: #264653;
-}
-
-.menu li a, .icon, .header{
-    transition: linear 0.15s;
+    /* To Be Continued */
+    display: none;
 }
 
 .main-container{
-    width: 75%;
-    max-width: 800px;
+    width: 90%;
     margin: 0 auto;
-    padding: 0 0 50px 0;
+    padding: 0 0 20px 0;
 }
 
 #main-header{
     text-align: center;
-    font-size: 4em;
+    font-size: 3em;
     letter-spacing: 7px;
 }
 
@@ -151,7 +124,7 @@ input[type="submit"]:hover{
 .grid-container{
     width: 100%;
     display: grid;
-    grid-template-columns: 33.33% 33.33% 33.33%;
+    grid-template-columns: 50% 50%;
     grid-auto-rows: min-content;
     grid-gap: 20px;
 }
@@ -187,4 +160,73 @@ input[type="submit"]:hover{
 .box p{
     font-size: 0.8em;
     padding-bottom: 10px;
+}
+
+@media only screen and (min-width: 600px) {
+/* For tablets: */
+
+}
+
+@media only screen and (min-width: 800px) {
+/* For desktop: */
+    .menu{
+        display: flex;
+        line-height: 70px;
+        margin: 0px 15px 0px 0px;
+    }
+
+    .menu li{
+        list-style-type: none;
+    }
+    .menu li a{
+        display: block;
+        letter-spacing: 0.09em;
+        color: #FCFAF9;
+        text-decoration: none;
+        padding: 0px 20px;
+    }
+
+    .icon{
+        color: #E9C46A;
+    }
+
+    .menu li a:hover, .header:hover{
+        background: #FCFAF9;
+        color: #264653;
+    }
+    .menu li a:hover .icon{
+        color: #264653;
+    }
+
+    .menu li a, .icon, .header{
+        transition: linear 0.15s;
+    }
+
+    .main-container{
+        width: 75%;
+        margin: 0 auto;
+        padding: 0 0 50px 0;
+    }
+    
+    #main-header{
+        text-align: center;
+        font-size: 4em;
+        letter-spacing: 7px;
+    }
+
+    .grid-container{
+        width: 100%;
+        display: grid;
+        grid-template-columns: 33.33% 33.33% 33.33%;
+        grid-auto-rows: min-content;
+        grid-gap: 20px;
+    }
+    
+    .box{
+        border: 1px solid lightgray;
+        min-height: 250px;
+        overflow: hidden;
+        border-radius: 7px;
+        transition: ease 0.2s;
+    }
 }
