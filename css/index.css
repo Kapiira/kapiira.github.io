@@ -22,6 +22,14 @@ h4{
     letter-spacing: 0.07em;
 }
 
+.jungle{
+    color: #2A9D8F;
+}
+
+.tomato{
+    color: #F06449;
+}
+
 .skipToMain{
     position: absolute;
     left: -10000px;
@@ -178,4 +186,5 @@ input[type="submit"]:hover{
 
 .box p{
     font-size: 0.8em;
+    padding-bottom: 10px;
 }
