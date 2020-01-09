@@ -10,6 +10,18 @@ h1, h2, h3, h4, h5, h6, .menu li {
     text-transform: uppercase;
 }
 
+a,
+a:link,
+a:visited,
+a:hover,
+a:active{
+    text-decoration: none;
+}
+
+h4{
+    letter-spacing: 0.07em;
+}
+
 .skipToMain{
     position: absolute;
     left: -10000px;
@@ -90,7 +102,7 @@ nav h1{
     width: 75%;
     max-width: 800px;
     margin: 0 auto;
-
+    padding: 0 0 50px 0;
 }
 
 #main-header{
@@ -132,26 +144,36 @@ input[type="submit"]:hover{
     width: 100%;
     display: grid;
     grid-template-columns: 33.33% 33.33% 33.33%;
+    grid-auto-rows: min-content;
     grid-gap: 20px;
 }
 
 .box{
-    border: 1px solid #264653;
-    height: 250px;
+    border: 1px solid lightgray;
+    min-height: 250px;
     overflow: hidden;
+    border-radius: 7px;
+    transition: ease 0.2s;
+}
+
+.box:hover{
+    -webkit-box-shadow: 0px 0px 7px 1px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 7px 1px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 7px 1px rgba(0,0,0,0.75);
 }
 
 .box img{
     object-fit: cover;
     width: 100%;
-    max-height: 100%;
     height: 170px;
-    border-bottom: 1px solid #264653;
+    border-bottom: 1px solid lightgray;
 }
 
 .box h4, .box p{
     margin: 0px;
     padding: 0px 5px;
+    color: black;
+    text-decoration: none;
 }
 
 .box p{
